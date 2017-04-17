@@ -1,0 +1,6 @@
+<!-- sessions new form (login page) -->
+
+<%= form_tag ({controller: 'sessions', action: 'create', method: 'post'}) do %>
+  <input name="username">
+  <input type='submit' value='login'>
+<% end %>

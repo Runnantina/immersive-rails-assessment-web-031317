@@ -1,18 +1,18 @@
-class GuestsController < ApplicationController
+class UsersController < ApplicationController
  # name, occupation
   def index
-    @guests = Guest.all
+    @users = User.all
   end
 
   def new
-    @guest = Guest.new
+    @user = User.new
   end
 
   def create
   end
 
   def show
-    @guest = Guest.find(params[:id])
+    @user = User.find(params[:id])
   end
 
   def edit
